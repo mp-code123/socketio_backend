@@ -13,7 +13,7 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server,{
     cors: {
-        origin: "https://wowchatroom.netlify.app/",
+        origin: "*",
         methods:["GET","POST"],
         
     }
